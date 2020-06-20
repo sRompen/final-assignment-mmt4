@@ -1,0 +1,421 @@
+html, body {
+    height: 100%;
+    background-color: rgb(255, 0, 212);
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url(../data/fonts/Montserrat/Montserrat-Medium.ttf);
+    font-family: Montserrat;
+    src: url(../data/fonts/Montserrat/Montserrat-Bold.ttf);
+    font-family: playfair;
+    src: url(../data/fonts/playfair-display/PlayfairDisplaySC-Regular.otf);
+}
+
+main {
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+#logo {
+    float: left;
+    scale: 0.5;
+    margin-top: -30px;
+}
+
+.switch {
+    float: right;
+    scale: 0.5;
+    margin-top: -30px;
+}
+
+nav {
+    width: 70%;
+    height: 2vh;
+    padding: 1%;
+    background-color: #CC0085;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: playfair;
+    font-size: 4vw;
+    color: rgb(153, 4, 128);
+    ;
+}
+
+h2 {
+    font-family: playfair;
+    font-size: 3vw;
+    text-align: center;
+}
+
+h3 {
+    font-family: Montserrat;
+    color: 255;
+    font-size: 2vw;
+    padding: 1%;
+}
+
+h4 {
+    font-family: Montserrat;
+    color: 255;
+    font-size: 2vw;
+    text-align: center;
+    padding: 1%;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 1vw;
+    color: rgb(255, 0, 212);
+    padding: 1%;
+}
+
+#introductie {
+    font-size: 1.5vw;
+}
+
+#intro {
+    margin-top: 5%;
+    width: 75%;
+}
+
+.kop {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../img/expert-img@2x.png);
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+
+#tekstvak {
+    padding: 5%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#keuze {
+    width: 100%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%
+}
+
+.hok {
+    width: 12vw;
+    height: 12vw;
+    background-color: rgb(153, 4, 128);
+    border-radius: 20px;
+    float: left;
+    margin-left: 10%;
+}
+
+#hokEen {
+    background-image: url(../img/blauw/codeer.svg);
+    ;
+}
+
+#hokTwee {
+    background-image: url(../img/blauw/leer.svg);
+}
+
+#hokDrie {
+    background-image: url(../img/blauw/speel.svg);
+}
+
+.plaatje {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemTekst {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#accordion {
+    margin-top: 5%;
+}
+
+#accordion .ui-accordion-header {
+    /* color: rgb(153, 4, 128); */
+    border: 2px solid #fff;
+}
+
+
+.support {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
+
+#witje {
+    color: #fff;
+}
+
+.pf {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+}
+
+.container>p {
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider .slides {
+    width: 3600px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style: none;
+    width: 720px;
+    height: 400px;
+    position: relative;
+}
+
+#slider .caption {
+    background-color: grey;
+    font-family: sans-serif;
+    width: 720px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    font-size: .8em;
+    padding-left: 20px;
+    text-transform: none;
+}
+
+/* Directions */
+
+.directions .left {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid lightblue;
+    border-left: 4px solid lightblue;
+    margin-top: -180px;
+    margin-left: 20px;
+    transform: rotate(-45deg);
+    float: left;
+    cursor: pointer;
+}
+
+.directions .right {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid lightblue;
+    border-right: 4px solid lightblue;
+    margin-top: -180px;
+    margin-right: 20px;
+    transform: rotate(45deg);
+    float: right;
+    cursor: pointer;
+}
+
+/* Bullets */
+
+.bullets {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.bullets .bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bullets .active, .bullets .bullet:hover {
+    background-color: lightblue
+}
+
+.aangepast {
+    text-align: left;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../img/expert-img@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.footerTekst {
+    padding: 2%;
+    text-align: center;
+}
+
+.CTA {
+    width: 20%;
+    height: 15%;
+    border-radius: 15px;
+    background-color: #CC0085;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#picture {
+    width: 100%;
+}
+
+.dark {
+    background-color: black;
+}
+
+.blueMode {
+    background-color: #1D00FF;
+}
+
+.whiteMode {
+    color: #fff;
+}
+
+.faderBlue {
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(29, 0, 255, 0.73)), url(../img/expert-img@2x.png);
+}
+
+.div-hide{
+    display: none;
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+/*
+ * Styles essential to the sample
+ * are below
+ */
+
+ #myPlayerID{
+     width: 100%;
+     height: 500px;
+ }
+ #backButton img {
+    margin-top: -7px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+  }
+  #forwardButton img {
+    margin-top: -7px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 750px) {
+    main {
+        width: 100%;
+    }
+    header {
+        width: 90%;
+    }
+    #logo {
+        scale: 0.3;
+    }
+    .switch {
+        scale: 0.4;
+        float: right;
+        margin-top: -10px;
+    }
+    nav {
+        width: 100%;
+        height: 2vh;
+        border-radius: 0px;
+    }
+    a {
+        font-size: 0.7em;
+        float: left;
+        margin-right: 10px;
+    }
+    #tekstvak {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+    #introductie, p {
+        font-size: 0.7em;
+    }
+    #keuze {
+        width: 100%;
+        height: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%
+    }
+    #footerTekst {
+        padding: 0.5%;
+    }
+    .hok {
+        width: 20vw;
+        height: 20vw;
+        margin-left: 10%;
+    }
+    .aangepast {
+        font-size: 2em;
+    }
+    .CTA {
+        width: 300px;
+        left: 50%;
+    }
+}
